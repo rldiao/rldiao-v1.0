@@ -1,0 +1,98 @@
+/* Color Palette
+#3D5A80 - Purple Navy (Navy blue)
+#98C1D9 - Pale Cerulean (light blue)
+#E0FBFC - Light Cyan
+#EE6C4D - Light Red Ochre
+#293241 - Gunmetal
+*/
+
+/* Global Styles */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+a {
+    color: #EE6C4D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 175px;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background: #293241;
+    color: #E0FBFC;
+}
+
+header h1, header h2 {
+    color: #E0FBFC;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+/* Work Experience */
+.work {
+    background: #E0FBFC;
+}
+
+/* Education */
+.education {
+    background: #E0FBFC;
+}
