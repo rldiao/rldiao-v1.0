@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- From https://fontawesome.com/start -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Diao | Resume</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- // Intro -->
-    <header>
+    <header id="about">
+        <a href="resume (1).pdf" class="btn download" download>Download PDF</a>
+        <nav class="display">
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <div class="content-wrap">
             <img class="profile-img col-narrow" src="https://picsum.photos/300" alt="Robert Diao">
             <div class="col-wide">
                 <h1>Robert Diao</h1>
-                <h2>Job title or tagline</h2>
-                <p>Add your profile summary here. You can have several paragraphs or add links.</p>
+                <h2>Software & Computing Student</h2>
+                <p>
+                    Studies Bachelor of Science, Software and Computing at The University of Melbourne. Has a love for Python
+                    and all things tech. An avid photographer and gamer in his spare time.
+                </p>
             </div>
         </div>
     </header>
     
     <main> 
         <!-- // Work Experience -->
-        <section class="work">
+        <section id="work" class="work">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
 
                 <!-- Job Details: copy this whole block to add more jobs -->
                 <div class="col-narrow">
                     <h3>Job title</h3>
-                    <p>Company Name</p>
+                    <p class="uppercase">Company Name</p>
                     <p>Date at job</p>
                 </div>
                 
                 <!-- Add as many paragraphs as you need. -->
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <p>Job summary.</p>
 
                     <!-- This list can be deleted if you don't want to use it. -->
@@ -46,14 +59,70 @@
                     </ul>
                 </div>
                 
-                
+                <!-- Job Details: copy this whole block to add more jobs -->
+                <div class="col-narrow">
+                        <h3>Job title</h3>
+                        <p class="uppercase">Company Name</p>
+                        <p>Date at job</p>
+                    </div>
+                    
+                    <!-- Add as many paragraphs as you need. -->
+                    <div class="col-wide job-description">
+                        <p>Job summary.</p>
+    
+                        <!-- This list can be deleted if you don't want to use it. -->
+                        <p>Optional list:</p>
+                        <ul>
+                            <li>Created...</li>
+                            <li>Lead...</li>
+                            <li>Responsible for</li>
+                        </ul>
+                </div>
+                <!-- Job Details: copy this whole block to add more jobs -->
+                <div class="col-narrow">
+                        <h3>Job title</h3>
+                        <p class="uppercase">Company Name</p>
+                        <p>Date at job</p>
+                    </div>
+                    
+                    <!-- Add as many paragraphs as you need. -->
+                    <div class="col-wide job-description">
+                        <p>Job summary.</p>
+    
+                        <!-- This list can be deleted if you don't want to use it. -->
+                        <p>Optional list:</p>
+                        <ul>
+                            <li>Created...</li>
+                            <li>Lead...</li>
+                            <li>Responsible for</li>
+                        </ul>
+                </div>
+                <!-- Job Details: copy this whole block to add more jobs -->
+                <div class="col-narrow">
+                        <h3>Job title</h3>
+                        <p class="uppercase">Company Name</p>
+                        <p>Date at job</p>
+                    </div>
+                    
+                    <!-- Add as many paragraphs as you need. -->
+                    <div class="col-wide job-description">
+                        <p>Job summary.</p>
+    
+                        <!-- This list can be deleted if you don't want to use it. -->
+                        <p>Optional list:</p>
+                        <ul>
+                            <li>Created...</li>
+                            <li>Lead...</li>
+                            <li>Responsible for</li>
+                        </ul>
+                </div>
                 <!-- end of Job Details block. -->
             </div>
         </section>
 
 
         <!-- // Education -->
-        <section class="education">
+        <section id="education" class="education">
             <div class="content-wrap">
                 <h2>Education</h2>
 
@@ -63,8 +132,21 @@
                 
                 <!-- Add as many paragraphs as you need. -->
                 <p>Summary.</p>
+
+                <h3>School name, year you attended</h3>
+                <p>Designation received</p>
+                
+                <!-- Add as many paragraphs as you need. -->
+                <p>Summary.</p>
+
+                <h3>School name, year you attended</h3>
+                <p>Designation received</p>
+                
+                <!-- Add as many paragraphs as you need. -->
+                <p>Summary.</p>
                 <!-- End of school details. -->
             </div>
+            
         </section>
     </main>
     
@@ -74,15 +156,14 @@
             <h2>Let's Keep in Touch!</h2>
             
             <!-- Social media and contact links. Add or remove any networks. -->
-            <div class="contact-info">
-                <a href="mailto:email@example.com">email@example.com</a>
-                <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Facebook</a>
+            <div id="contact" class="contact-info">
+                <a href="mailto:rdiao.work@gmail.com"><i class="fas fa-envelope fa-2x"></i><span class="sr-only">Email</span></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i><span class="sr-only">Twitter</span></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i><span class="sr-only">Linkedin</span></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"><span class="sr-only">Facebook</span></i></a>
             </div>
 
-            <p>Copyright 2017 by Robert Diao</p>
+            <p>Copyright 2018 by Robert Diao</p>
         </div>
     </footer>
 </body>
