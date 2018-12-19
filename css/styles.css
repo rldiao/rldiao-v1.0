@@ -54,17 +54,6 @@ a:hover {
     overflow: hidden;
 }
 
-.col-narrow {
-    width: 30%;
-    float: left;
-}
-
-.col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -80,11 +69,11 @@ a:hover {
 /* Header and Footer Styles */
 header, footer {
     background: #293241;
-    color: #E0FBFC;
+    color: white;
 }
 
 header h1, header h2 {
-    color: #E0FBFC;
+    color: white;
     margin: 0;
 }
 
@@ -111,6 +100,10 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.contact-btn {
+    padding: 0px 20px;
 }
 
 /* Navigation */
@@ -154,10 +147,36 @@ h3 ~ p {
 
 /* Education */
 .education {
-    background: #E0FBFC;
+    background: linear-gradient(rgba(61,90,128,0.4), rgba(61,90,128,0.4)),
+                url(../images/larisa-birta-127432-unsplash.jpg) no-repeat bottom right;
+    background-size: cover;
+    color: white;
 }
 
 p + h3 {
     /* 'h3' that follows a 'p' tag */
     margin-top: 30px;
+}
+
+/* Media Queries */
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+    
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
 }
